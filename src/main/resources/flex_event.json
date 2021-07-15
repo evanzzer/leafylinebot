@@ -1,0 +1,105 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Hello %1$s!",
+        "size": "lg",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "To be able to use me fully, let's click the button below for some tutorial!",
+        "size": "md",
+        "wrap": true
+      },
+      {
+        "type": "text",
+        "text": "Or you can read the command below:",
+        "size": "sm",
+        "wrap": true
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xl",
+        "contents": [
+          {
+            "type": "text",
+            "text": "calc <question>",
+            "size": "sm",
+            "color": "#aaaaaa",
+            "wrap": true,
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "Ask Wolfram Alpha any questions",
+            "size": "sm",
+            "wrap": true,
+            "flex": 4
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xl",
+        "contents": [
+          {
+            "type": "text",
+            "text": "calcsolve <question>",
+            "size": "sm",
+            "color": "#aaaaaa",
+            "wrap": true,
+            "flex": 1
+          },
+          {
+            "type": "text",
+            "text": "Ask Wolfram Alpha any math questions.\nReturn complete answers.",
+            "size": "sm",
+            "wrap": true,
+            "flex": 4
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Powered by Wolfram|Alpha",
+        "margin": "xl",
+        "size": "xs",
+        "color": "#aaaaaa"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "action": {
+          "type": "postback",
+          "label": "Simple Calculation",
+          "data": "calc pi",
+          "text": "calc pi"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "action": {
+          "type": "postback",
+          "label": "Complete Calculation",
+          "data": "calcsolve pi",
+          "text": "calcsolve pi"
+        }
+      }
+    ]
+  }
+}
